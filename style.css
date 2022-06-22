@@ -101,6 +101,7 @@ hr{
     padding: 1rem 1rem;
     text-align: center;
     border-top-right-radius: 1rem;
+    margin-top: 3rem;
 }
 .footer h3{
     color: var(--nav-heading);
