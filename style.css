@@ -25,6 +25,7 @@ hr{
     margin: auto;
 }
 .link{
+    display: inline-block;
     text-decoration: none;
     padding: 0.5rem 1rem;
     color: white;
@@ -32,14 +33,14 @@ hr{
 .primary-link{
     border-radius: 0.5rem;
     background-color: var(--primary-color);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     border: 2px solid var(--border-color);
 }
 .secondary-link{
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 .non-bullet{
     list-style: none;
