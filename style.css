@@ -46,7 +46,7 @@ hr{
     list-style: none;
 }
 .list-items-inline{
-    display: inline;
+    display: inline-block;
 }
 .nav-brand{
     font-size: 1.1rem;
