@@ -200,6 +200,9 @@ body{
     padding: 0.5rem 1rem;
     display: inline-block;
 }
+.api-link{
+    text-decoration: none;
+}
 .off-container{
     padding-top: 1rem;
     padding-bottom: 2rem;
