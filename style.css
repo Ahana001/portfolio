@@ -282,6 +282,7 @@ body{
 }
 .box p{
     text-align: justify;
+    word-spacing: -0.2rem;
     margin-bottom: 2vh;
     word-wrap: break-word;
 }
