@@ -321,6 +321,9 @@ body{
     #blur3{
         right: -15%;
     }
+    .grid-container .highlight{
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width: 440px) {
     .navigation .nav-inline-link {
