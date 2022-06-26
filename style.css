@@ -198,6 +198,7 @@ body{
 .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
+    display: inline-block;
 }
 .off-container{
     padding-top: 1rem;
