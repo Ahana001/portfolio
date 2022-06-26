@@ -191,7 +191,7 @@ body{
 }
 .section .decription{
     text-align: justify;
-    word-wrap: break-word;
+    word-spacing: -0.2rem;
     max-width: 50%;
     margin: auto;
     margin-bottom: 3vh;
