@@ -191,6 +191,7 @@ body{
 }
 .section .decription{
     text-align: justify;
+    word-wrap: break-word;
     max-width: 50%;
     margin: auto;
     margin-bottom: 3vh;
@@ -282,6 +283,7 @@ body{
 .box p{
     text-align: justify;
     margin-bottom: 2vh;
+    word-wrap: break-word;
 }
 @media screen and (max-width:1024px) {
     .container {
