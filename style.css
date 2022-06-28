@@ -218,7 +218,7 @@ body{
     word-spacing: -0.2rem;
     max-width: 50%;
     margin: auto;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
 }
 .link{
     text-decoration: none;
@@ -237,7 +237,6 @@ body{
 }
 .primary-link {
     margin-right: 1rem;
-    margin-bottom: 1rem;
     border-radius: 0.5rem;
     background-color: var(--highlight-color);
     border: 2px solid var(--border-color);
@@ -245,6 +244,7 @@ body{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .secondary-link {
+    margin-top: 1rem;
     color: var(--highlight-color);
     border: none;
     border-radius: 0.5rem;
