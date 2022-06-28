@@ -217,8 +217,7 @@ body{
     text-align: justify;
     word-spacing: -0.2rem;
     max-width: 50%;
-    margin: auto;
-    margin: 3vh 0;
+    margin: 3vh auto;
 }
 .link{
     text-decoration: none;
