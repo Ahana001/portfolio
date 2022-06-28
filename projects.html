@@ -16,7 +16,61 @@
     <title>Projects | Ankita</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
+  <style>
+    :root {
+      --bg-color: #f6f6f5;
+      --text-color: #231566;
+      --highlight-color: #ef9825;
+      --circle1-color: #6d4ab5;
+      --circle2-color: #a3e9fa;
+      --circle3-color: #9e4793;
+      --circle4-color: #6aafca;
+    }
+    #circle1 {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      background-color: var(--circle4-color);
+      position: absolute;
+      top: 0;
+      left: 0;
+      filter: blur(90px);
+    }
+    #circle2 {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      background-color: var(--circle1-color);
+      position: absolute;
+      top: 80%;
+      right: 0%;
+      filter: blur(110px);
+    }
+    #circle3 {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      background-color: var(--highlight-color);
+      position: absolute;
+      top: -10rem;
+      right: 0%;
+      filter: blur(90px);
+    }
+    #circle4 {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      background-color: var(--highlight-color);
+      position: absolute;
+      bottom: 0%;
+      left: 20%;
+      filter: blur(100px);
+    }
+  </style>
   <body>
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <div id="circle3"></div>
     <!-- navbar section -->
     <nav class="navigation">
       <div class="nav-brand">Ankita Thakkar</div>
@@ -39,370 +93,111 @@
     </header>
 
     <!-- projects -->
-    <div class="grid-container">
-      <article class="box">
-        <h3>Do You Know Me Quiz</h3>
-        <small>December, 2021</small>
-        <p>Developed using <span class="highlight">NodeJS</span></p>
-        <p>
-          This is a CLI App. if answer is right then your score will increase.if
-          current user has made a high score then i will congratulate him/her.
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://replit.com/@Ahana001/Do-You-Know-Me?embed=1&output=1"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/Do-You-Know-Me-Quiz"
-          >View code</a
-        >
-      </article>
-
-      <article class="box">
-        <h3>GK Quiz</h3>
-        <small>December, 2021</small>
-        <p>Developed using <span class="highlight">NodeJS</span></p>
-        <p>
-          This is a CLI App. each question has four options that will be in
-          front of you. you can also skip questions. each right answer will
-          increase your score.
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://replit.com/@Ahana001/GKQuiz?embed=1&output=1"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/GKQuiz"
-          >View code</a
-        >
-      </article>
-
-      <article class="box">
-        <h3>minion-talk</h3>
-        <small>February, 2022</small>
-        <p>Developed using <span class="highlight">Vanilla JS</span></p>
-        <p>
-          You need to enter your message in english and converter will convert
-          it in Minion's language.It uses api
-          <a class="api-link" href="https://funtranslations.com/"
-            ><span class="highlight">funtranslations.com</span></a
+    <div class="cards">
+      <div class="card-container">
+        <article class="card">
+          <h3>NeoG Camp Projects</h3>
+          <ul class="non-bullet">
+            <li class="inline-list highlight">HTML</li>
+            <li class="inline-list highlight">CSS</li>
+            <li class="inline-list highlight">JS</li>
+            <li class="inline-list highlight">React</li>
+            <li class="inline-list highlight">Node</li>
+          </ul>
+          <p>
+            This project contains all mark1 to mark15 projects with their source
+            code and live link.
+          </p>
+          <a class="link secondary-link" target="_blank" href="neogproject.html"
+            >click Here</a
           >
-          to translate text into minion language.
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://minion-speak-language.netlify.app/"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/minon-talk"
-          >View code</a
-        >
-      </article>
+        </article>
 
-      <article class="box">
-        <h3>Yoda Translator</h3>
-        <small>June, 2022</small>
-        <p>Developed using <span class="highlight">Vanilla JS</span></p>
-        <p>
-          Yoda translator translates English language sentances to yoda
-          speak.Yoda speaks in short sentences! If you try to translate long,
-          convoluted sentences you'll probably get a weird and often
-          inconsistent translation.
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://yoda-speack.netlify.app/"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/Yoda-Translator"
-          >View code</a
-        >
-      </article>
+        <!-- personal projects -->
 
-      <article class="box">
-        <h3>Emoji Translator</h3>
-        <small>February, 2022</small>
-        <p>Developed using <span class="highlight">React JS</span></p>
-        <p>
-          It will tell you the meaning of the emoji on clicking on emoji and you
-          can also search the meaning by entering emoji in the input box.
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://68kit.csb.app/"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/emojiPedia"
-          >View code</a
-        >
-      </article>
+        <article class="card">
+          <h3>Weather APP</h3>
+          <ul class="non-bullet">
+            <li class="inline-list highlight">HTML</li>
+            <li class="inline-list highlight">CSS</li>
+            <li class="inline-list highlight">JS</li>
+          </ul>
+          <p>
+            This is an weather APP which uses API using openweathermap.org API
+            and display wather of perticular location.
+          </p>
+          <a
+            class="link secondary-link"
+            target="_blank"
+            href="https://github.com/Ahana001/weather-app"
+            >click here</a
+          >
+        </article>
 
-      <article class="box">
-        <h3>Food Recommendation</h3>
-        <small>June, 2022</small>
-        <p>Developed using <span class="highlight">React JS</span></p>
-        <p>
-          This React app lets you distinguish between different kind of meal of
-          different cities using the menu bar.
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://8doqkg.csb.app/"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/food-recommendation"
-          >View code</a
-        >
-      </article>
+        <article class="card">
+          <h3>File Sharing</h3>
+          <ul class="non-bullet">
+            <li class="inline-list highlight">NodeJS</li>
+            <li class="inline-list highlight">mongoDB</li>
+            <li class="inline-list highlight">multer Library</li>
+          </ul>
+          <p>
+            You can share your PDF, Image Documents by single url generated by
+            this app. You need to share that url and using it you can download
+            file.
+          </p>
+          <a
+            class="link secondary-link"
+            target="_blank"
+            href="https://github.com/Ahana001/share-file-GUI"
+            >click here</a
+          >
+        </article>
 
-      <article class="box">
-        <h3>Cash Register</h3>
-        <small>February, 2022</small>
-        <p>Developed using <span class="highlight">Vanilla JS</span></p>
-        <p>
-          It helps the user by telling how can he/she return the change to the
-          customer with minimum number of notes.
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://digitalcashmanager.netlify.app/"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/Cash-Register-Manager"
-          >View code</a
-        >
-      </article>
+        <article class="card">
+          <h3>Word Scramble Game</h3>
+          <ul class="non-bullet">
+            <li class="inline-list highlight">HTML</li>
+            <li class="inline-list highlight">CSS</li>
+            <li class="inline-list highlight">JS</li>
+          </ul>
+          <p>
+            This is a fun game based on word scrambles. You are presented with a
+            scrambled word and you need to decipher the original word from it.
+          </p>
+          <a
+            class="link secondary-link"
+            target="_blank"
+            href="https://github.com/Ahana001/wordscramble.github.io"
+            >click here</a
+          >
+        </article>
 
-      <article class="box">
-        <h3>Lucky Birthdate</h3>
-        <small>June, 2022</small>
-        <p>Developed using <span class="highlight">Vanilla JS</span></p>
-        <p>
-          A website which checks whether your birthday is lucky or not by
-          calculating if sum of digits in your birthdate is divisible by your
-          lukcy number
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://luckynumber.ahana001.repl.co/"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/lucky-birthday"
-          >View code</a
-        >
-      </article>
-
-      <article class="box">
-        <h3>triangles-quiz</h3>
-        <small>February, 2022</small>
-        <p>Developed using <span class="highlight">HTML CSS JS</span></p>
-        <p>
-          Fun with Triangle app which has quiz on triangle, hypotenuse
-          calculation & area calculation and also a check whether the given
-          angles can form a triangle or not?
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://triangleattribute.netlify.app/"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/funTriangle"
-          >View code</a
-        >
-      </article>
-
-      <article class="box">
-        <h3>palindrome birthday</h3>
-        <small>February, 2022</small>
-        <p>Developed using <span class="highlight">HTML CSS JS</span></p>
-        <p>pending</p>
-        <a class="link primary-link" target="_blank" href="">Live Project</a>
-        <a class="link secondary-link" target="_blank" href="">View code</a>
-      </article>
-
-      <article class="box">
-        <h3>profit or loss</h3>
-        <small>June, 2022</small>
-        <p>Developed using <span class="highlight">HTML CSS JS</span></p>
-        <p>
-          Take user's stock price for one stock when he bought it. Take the
-          quantity as well Now, take today's stock price for that stock and Tell
-          the user how much profit or loss he/she is making.
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://fqe02b.csb.app/"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/stock-profit-loss"
-          >View code</a
-        >
-      </article>
-      <article class="box">
-        <h3>Leap Year</h3>
-        <small>June, 2022</small>
-        <p>Developed using <span class="highlight">Node JS</span></p>
-        <p>
-          want to know if your birth year is a leap year or not? well, don't
-          worry 😇 i have got you covered 😉 this CLI app that i have made in
-          JavaScript will tell you if your birth year is a leap year or not!!
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://replit.com/@Ahana001/LeapYear?embed=1&output=1"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/LeapYear"
-          >View code</a
-        >
-      </article>
-      <article class="box">
-        <h3>prime number</h3>
-        <small>June, 2022</small>
-        <p>Developed using <span class="highlight">Node JS</span></p>
-        <p>
-          This is CLI app to check whether user's birthday is a prime number.
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://replit.com/@Ahana001/prime-number?embed=1&output=1"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/prime-number"
-          >View code</a
-        >
-      </article>
-
-      <!-- personal projects -->
-      <article class="box">
-        <h3>File Sharing</h3>
-        <small>February, 2022</small>
-        <p>Developed using <span class="highlight">Node JS</span></p>
-        <p>
-          You can share your PDF, Image Documents by single url generated by
-          this app. You need to share that url and using it you can download
-          file.
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://sharefile-app.netlify.app/"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/share-file-GUI"
-          >View code</a
-        >
-      </article>
-
-      <article class="box">
-        <h3>Word Scramble Game</h3>
-        <small>January, 2022</small>
-        <p>Developed using <span class="highlight">Node JS</span></p>
-        <p>
-          This is a fun game based on word scrambles. You are presented with a
-          scrambled word and you need to decipher the original word from it.
-        </p>
-        <a
-          class="link primary-link"
-          target="_blank"
-          href="https://ahana001.github.io/wordscramble.github.io/"
-          >Live Project</a
-        >
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/wordscramble.github.io"
-          >View code</a
-        >
-      </article>
-
-      <article class="box">
-        <h3>Authentication API</h3>
-        <small>March, 2022</small>
-        <p>Developed using <span class="highlight">Node JS</span></p>
-        <p>
-          This is an Authentication API using JWT's. Email & Password is used
-          for authentication. The API based on Node.js, It uses Joi validation,
-          Mongoose is used for storing Users in Database.
-        </p>
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/authentication"
-          >View code</a
-        >
-      </article>
-
-      <article class="box">
-        <h3>Weather APP</h3>
-        <small>January, 2022</small>
-        <p>Developed using <span class="highlight">Vanilla JS</span></p>
-        <p>
-          This is an weather APP which uses API using openweathermap.org API and
-          display wather of perticular location.
-        </p>
-        <a
-          class="link secondary-link"
-          target="_blank"
-          href="https://github.com/Ahana001/weather-app"
-          >View code</a
-        >
-      </article>
+        <article class="card">
+          <h3>Authentication API</h3>
+          <ul class="non-bullet">
+            <li class="inline-list highlight">Node JS</li>
+            <li class="inline-list highlight">JWT</li>
+            <li class="inline-list highlight">Joi</li>
+          </ul>
+          <p>
+            This is an Authentication API using JWT's. Email & Password is used
+            for authentication. The API based on Node.js, It uses Joi
+            validation, Mongoose is used for storing Users in Database.
+          </p>
+          <a
+            class="link secondary-link"
+            target="_blank"
+            href="https://github.com/Ahana001/authentication"
+            >click here</a
+          >
+        </article>
+      </div>
     </div>
 
     <!-- footer section -->
     <footer class="footer">
+      <div id="circle4"></div>
       <h3 class="highlight">connect to me</h3>
       <ul class="footer-non-list">
         <li class="footer-inline-link">
