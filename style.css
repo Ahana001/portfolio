@@ -379,6 +379,9 @@ body{
    .hero-container .hero-img {
        display: none;
    }
+   .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   }
 }
 @media screen and (max-width: 597px) {
     .navigation .nav-inline-link{
@@ -415,6 +418,9 @@ body{
     .cards {
         max-width: 90%;
     }
+    .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
     #circle3{
         display: none;
     }
@@ -440,9 +446,9 @@ body{
              display: block;
              padding: 0 1rem;
          }
-                  .cards {
-                      width: 100%;
-                  }
+    .cards {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 280px) {
     .navigation .nav-inline-link .link, .navigation .nav-inline-link .active-link{
