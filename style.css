@@ -403,7 +403,7 @@ body{
     .section .decription {
      max-width: 80%;
     }
-    .section #highlight {
+    .section .highlight {
          font-size: 1.2rem;
          max-width: 80%;
     }
