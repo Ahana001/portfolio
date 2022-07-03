@@ -212,7 +212,7 @@ body{
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--highlight-color);
-    max-width: 80%;
+    max-width: 50%;
     margin: auto;
 }
 .section .decription{
@@ -379,9 +379,7 @@ body{
    .hero-container .hero-img {
        display: none;
    }
-   .section #highlight{
-    font-size: 1.2rem;
-   }
+   
    .card-container {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
    }
@@ -404,6 +402,10 @@ body{
     }
     .section .decription {
      max-width: 80%;
+    }
+    .section #highlight {
+         font-size: 1.2rem;
+         max-width: 80%;
     }
     #blur3{
         right: -15%;
