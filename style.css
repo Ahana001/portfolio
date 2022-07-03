@@ -379,6 +379,9 @@ body{
    .hero-container .hero-img {
        display: none;
    }
+   .section #highlight{
+    font-size: 1.2rem;
+   }
    .card-container {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
    }
