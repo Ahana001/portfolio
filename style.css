@@ -212,6 +212,8 @@ body{
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--highlight-color);
+    max-width: 80%;
+    margin: auto;
 }
 .section .decription{
     text-align: justify;
