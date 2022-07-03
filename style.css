@@ -214,6 +214,8 @@ body{
     color: var(--highlight-color);
     max-width: 50%;
     margin: auto;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 .section .decription{
     text-align: justify;
