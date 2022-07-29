@@ -207,6 +207,7 @@ body{
 .section{
     margin-top: 5vh;
     text-align: center;
+    padding: 1rem 0;
 }
 .section .highlight {
     font-size: 1.5rem;
@@ -276,8 +277,13 @@ body{
     display: inline-block;
     text-decoration: none;
     font-size: 1.2rem;
-    color: var(--text-color);
     transition: transform 0.2s ease-in-out;
+}
+.footer .footer-inline-link .link{
+    color: var(--text-color);
+}
+.footer .footer-inline-link .link:visited {
+    color: var(--text-color);
 }
 .footer  .footer-inline-link:hover {
     transform: translateY(-5px);
@@ -295,11 +301,10 @@ body{
 }
 /* neog project */
 .grid-container {
-    padding: 0 1rem;
     margin-top: 1rem;
     margin-bottom: 3rem;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
 }
 .grid-container .highlight{
     font-size: 1.5rem;
@@ -307,7 +312,17 @@ body{
 }
 .box {
     font-size: 1.2rem;
-    padding: 1rem 1rem;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 3px var(--highlight-color);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    margin: 50px;
+}
+.box .neo-links{
+ display: flex;
+ align-items: center;
 }
 .box p{
     text-align: justify;
@@ -355,12 +370,6 @@ body{
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
-@media screen and (max-width:1267px){
-    .grid-container {
-            grid-template-columns: auto auto;
-            padding: 0 1.5rem;
-        }
-}
 @media screen and (max-width:1024px) {
     .container {
         padding: 0 1rem;
@@ -374,10 +383,7 @@ body{
    
 }
 @media only screen and (max-width: 876px) {
-    .grid-container {
-        display: block;
-        padding: 0 2rem;
-    }
+  
    .hero-container .hero-img {
        display: none;
    }
@@ -418,10 +424,7 @@ body{
     .primary-link{
         margin-right: 0.5rem;;
     }
-    .grid-container {
-        display: block;
-        padding: 0 1.5rem;
-    }
+   
     .cards {
         max-width: 90%;
     }
@@ -449,10 +452,6 @@ body{
     .footer .footer-inline-link{
         font-size: 1rem;
     }
-         .grid-container {
-             display: block;
-             padding: 0 1rem;
-         }
     .cards {
         width: 100%;
     }

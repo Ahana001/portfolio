@@ -16,7 +16,53 @@
     <title>Blogs | Ankita</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
+  <style>
+    :root {
+      --bg-color: #f6f6f5;
+      --text-color: #231566;
+      --highlight-color: #ef9825;
+      --circle1-color: #6d4ab5;
+      --circle2-color: #a3e9fa;
+      --circle3-color: #9e4793;
+      --circle4-color: #6aafca;
+    }
+    #circle1 {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      background-color: var(--circle3-color);
+      position: absolute;
+      top: 0;
+      left: 0;
+      filter: blur(90px);
+    }
+    #circle2 {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      background-color: var(--circle2-color);
+      position: absolute;
+      top: 80%;
+      right: 0%;
+      filter: blur(70px);
+    }
+    #circle3 {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      background-color: var(--circle4-color);
+      position: absolute;
+      top: -10rem;
+      right: 0%;
+      filter: blur(90px);
+    }
+  </style>
+
   <body>
+    <!-- design circle -->
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <div id="circle3"></div>
     <!-- navbar section -->
     <nav class="navigation">
       <div class="nav-brand">Ankita Thakkar</div>
@@ -34,56 +80,69 @@
     </nav>
 
     <header class="heading">
-      <h1>see <span class="highlight">my blogs</span></h1>
+      <h1><span class="highlight"> blogs</span></h1>
     </header>
 
-    <section class="section">
-      <div>
-        <h3 class="highlight">How to use API with Fetch API and Promises.</h3>
-        <div class="decription">
-          <p>
-            In this blog, We will talk about what is promise and how to connect
-            api with our project. how to get dynamic data from server and render
-            it on html page.
-          </p>
+    <div class="container">
+      <section class="section off-container">
+        <div>
+          <h3 class="highlight">How to use API with Fetch API and Promises.</h3>
+          <div class="decription">
+            <p>
+              In this blog, We will talk about what is promise and how to
+              connect api with our project. how to get dynamic data from server
+              and render it on html page.
+            </p>
+          </div>
+          <a
+            class="link secondary-link"
+            target="_blank"
+            href="https://dev.to/ahana001/how-to-use-api-with-fetch-api-and-promises-5hh3"
+            >Read more</a
+          >
         </div>
-        <a
-          class="link secondary-link"
-          href="https://dev.to/ahana001/how-to-use-api-with-fetch-api-and-promises-5hh3"
-          >Read more</a
-        >
-      </div>
-    </section>
+      </section>
 
-    <section class="section">
-      <div>
-        <h3 class="highlight">Trust Issues with setTimeout()</h3>
-        <div class="decription">
-          <p>
-            In this blog, We will talk about call stack and setTimeout. why
-            sometimes setTimeout takes more time than mentioned delay.
-          </p>
+      <section class="section off-container">
+        <div>
+          <h3 class="highlight">Trust Issues with setTimeout()</h3>
+          <div class="decription">
+            <p>
+              In this blog, We will talk about call stack and setTimeout. why
+              sometimes setTimeout takes more time than mentioned delay.
+            </p>
+          </div>
+          <a
+            class="link secondary-link"
+            target="_blank"
+            href="https://dev.to/ahana001/trust-issues-with-settimeout-43pb"
+            >Read more</a
+          >
         </div>
-        <a
-          class="link secondary-link"
-          href="https://dev.to/ahana001/trust-issues-with-settimeout-43pb"
-          >Read more</a
-        >
-      </div>
-    </section>
-
+      </section>
+    </div>
     <!-- footer section -->
     <footer class="footer">
       <h3 class="highlight">connect to me</h3>
       <ul class="footer-non-list">
         <li class="footer-inline-link">
-          <a class="link" href="https://github.com/Ahana001">Github</a>
+          <a class="link" target="_blank" href="https://github.com/Ahana001"
+            >Github</a
+          >
         </li>
         <li class="footer-inline-link">
-          <a class="link" href="https://twitter.com/Ankita050105">Twitter</a>
+          <a
+            class="link"
+            target="_blank"
+            href="https://twitter.com/Ankita050105"
+            >Twitter</a
+          >
         </li>
         <li class="footer-inline-link">
-          <a class="link" href="https://www.linkedin.com/in/ankita001"
+          <a
+            class="link"
+            target="_blank"
+            href="https://www.linkedin.com/in/ankita001"
             >LinkdIn</a
           >
         </li>
