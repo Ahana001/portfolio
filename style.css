@@ -455,6 +455,7 @@ html{
 @media screen and (max-width: 440px) {
     .navigation .nav-inline-link {
         margin: 0 0rem;
+        font-size: 0.8rem;
     }
     .i-container .highlight{
         font-size: 1.5rem;
@@ -474,7 +475,7 @@ html{
 }
 @media screen and (max-width: 280px) {
     .navigation .nav-inline-link .link, .navigation .nav-inline-link .active-link{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     #blur1 {
         height: 8rem;
