@@ -20,11 +20,11 @@ monospace;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+html, body{
     font-family: 'Roboto Mono';
     background-color: var(--bg-color) ;
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     overflow-x: hidden;
 }
 /* navigation section */
