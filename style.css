@@ -53,6 +53,7 @@ html{
     top: 15%;
     left: -5%;
     z-index: -9;
+    pointer-events: none;
 }
 #blur2 {
     position: absolute;
@@ -64,6 +65,7 @@ html{
     top: 0%;
     right: 10%;
     z-index: -9;
+    pointer-events: none;
 }
 #blur3 {
     position: absolute;
@@ -75,6 +77,7 @@ html{
     bottom: 0%;
     right: -2%;
     z-index: -9;
+    pointer-events: none;
 }
 .navigation{
     width: 100%;
