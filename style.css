@@ -15,12 +15,27 @@ monospace;
     --circle3-color: #9E4793;
     --circle4-color:#6AAFCA;
 }
+/*scrollbar track width*/
+::-webkit-scrollbar {
+    width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--circle4-color);
+    border-radius: 10px;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body{
+html{
     font-family: 'Roboto Mono';
     background-color: var(--bg-color) ;
     height: 100vh;
