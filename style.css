@@ -25,6 +25,7 @@ body{
     background-color: var(--bg-color) ;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 /* navigation section */
 #blur1 {
