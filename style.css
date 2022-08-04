@@ -324,9 +324,10 @@ html{
     margin-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-gap: 30px;
 }
 .grid-container .highlight{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--highlight-color);
 }
 .box {
@@ -335,9 +336,6 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: solid 3px var(--highlight-color);
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    margin: 50px;
 }
 .box .neo-links{
  display: flex;
